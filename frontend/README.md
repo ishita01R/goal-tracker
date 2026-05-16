@@ -1,16 +1,107 @@
-# React + Vite
+# GoalBridge
+### Align. Track. Achieve.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GoalBridge is a smart enterprise goal management and performance tracking platform designed for organizations to streamline employee goal setting, manager approvals, quarterly reviews, analytics, and audit-ready reporting.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Live Demo
 
-## React Compiler
+Frontend Deployment:
+https://goal-tracker-six-umber.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GitHub Repository:
+https://github.com/ishita01R/goal-tracker
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Problem Statement
+
+Organizations often struggle with:
+- manual goal tracking
+- disconnected approval workflows
+- lack of quarterly visibility
+- poor audit tracking
+- inconsistent performance reporting
+
+GoalBridge solves this by providing a centralized role-based performance management platform.
+
+---
+
+# Features
+
+## Employee Portal
+- Create goal sheets
+- Weightage validation
+- Quarterly check-ins
+- Goal locking after approval
+- Progress tracking
+
+## Manager Portal
+- Review submitted goals
+- Approve and lock goals
+- Provide manager feedback
+- Track employee quarterly progress
+
+## Admin / HR Portal
+- Analytics dashboard
+- Audit trail
+- CSV export reports
+- Goal approval visibility
+- Completion tracking
+
+---
+
+# Tech Stack
+
+Frontend:
+- React.js
+- Vite
+- CSS3
+
+Backend:
+- Flask (Python)
+
+Deployment:
+- Vercel
+- GitHub
+
+---
+
+# Workflow
+
+Employee
+→ Goal Creation
+→ Submit Goals
+→ Manager Approval
+→ Quarterly Check-in
+→ Admin Analytics & Reporting
+
+---
+
+# Key Highlights
+
+- Role-based dashboards
+- Enterprise-style UI
+- Audit-ready workflow
+- Analytics visualization
+- Exportable reports
+- Real-time approval flow
+
+---
+
+# Future Scope
+
+- AI-based performance insights
+- Real database integration
+- Authentication system
+- Email notifications
+- Department-level analytics
+- KPI benchmarking
+
+---
+
+# Developed By
+
+Ishita Rawat
+B.Tech CSE
