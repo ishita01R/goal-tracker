@@ -199,7 +199,7 @@ function EmployeeDashboard() {
     );
 
     alert("Goals submitted successfully");
-    window.location.reload();
+    window.location.href = "/";
   };
 
   const submitCheckin = () => {
@@ -218,12 +218,12 @@ function EmployeeDashboard() {
     );
 
     alert("Quarterly check-in submitted");
-    window.location.reload();
+    window.location.href = "/";
   };
 
   const resetData = () => {
     localStorage.clear();
-    window.location.reload();
+    window.location.href = "/";
   };
 
   return (
@@ -360,7 +360,7 @@ function ManagerDashboard() {
     localStorage.setItem("auditLog", JSON.stringify(logs));
 
     alert("Goals approved and locked");
-    window.location.reload();
+    window.location.href = "/";
   };
 
   const saveComment = () => {
@@ -371,7 +371,7 @@ function ManagerDashboard() {
     localStorage.setItem("auditLog", JSON.stringify(logs));
 
     alert("Manager comment saved");
-    window.location.reload();
+    window.location.href = "/";
   };
 
   return (
