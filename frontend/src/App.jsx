@@ -13,15 +13,117 @@ function Login() {
   const navigate = useNavigate();
 
   return (
-    <div className="container login-card">
-      <h1>AtomQuest GoalSync</h1>
-      <p className="subtitle">
-        Smart in-house goal setting, approval and quarterly tracking portal
-      </p>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg,#0f172a,#1e293b,#312e81)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "40px",
+      }}
+    >
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "1200px",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "40px",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          <p
+            style={{
+              color: "#a5b4fc",
+              fontWeight: "700",
+              letterSpacing: "2px",
+            }}
+          >
+            ENTERPRISE PERFORMANCE PLATFORM
+          </p>
 
-      <button onClick={() => navigate("/employee")}>Employee Portal</button>
-      <button onClick={() => navigate("/manager")}>Manager Portal</button>
-      <button onClick={() => navigate("/admin")}>Admin / HR Portal</button>
+          <h1
+            style={{
+              color: "white",
+              fontSize: "72px",
+              lineHeight: "1",
+              marginBottom: "20px",
+            }}
+          >
+            GoalBridge
+          </h1>
+
+          <p
+            style={{
+              color: "#cbd5e1",
+              fontSize: "22px",
+              lineHeight: "1.6",
+              maxWidth: "550px",
+            }}
+          >
+            Smart enterprise goal alignment, quarterly check-ins, approval
+            workflows, analytics dashboards and audit-ready performance
+            tracking.
+          </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "15px",
+              marginTop: "35px",
+              flexWrap: "wrap",
+            }}
+          >
+            <div className="glass-pill">FY 2026 Goal Cycle</div>
+            <div className="glass-pill">Real-time Approval Flow</div>
+            <div className="glass-pill">Audit Analytics</div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            background: "rgba(255,255,255,0.08)",
+            border: "1px solid rgba(255,255,255,0.12)",
+            backdropFilter: "blur(18px)",
+            borderRadius: "30px",
+            padding: "45px",
+            boxShadow: "0 25px 50px rgba(0,0,0,0.35)",
+          }}
+        >
+          <h2
+            style={{
+              color: "white",
+              fontSize: "34px",
+              marginBottom: "10px",
+            }}
+          >
+            Access Portals
+          </h2>
+
+          <p
+            style={{
+              color: "#cbd5e1",
+              marginBottom: "35px",
+            }}
+          >
+            Secure role-based enterprise access
+          </p>
+
+          <button className="portal-btn purple" onClick={() => navigate("/employee")}>
+            Employee Portal
+          </button>
+
+          <button className="portal-btn blue" onClick={() => navigate("/manager")}>
+            Manager Portal
+          </button>
+
+          <button className="portal-btn green" onClick={() => navigate("/admin")}>
+            Admin / HR Portal
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -35,6 +137,7 @@ function EmployeeDashboard() {
   const [progressStatus, setProgressStatus] = useState("On Track");
 
   const [goals, setGoals] = useState([]);
+
   const submittedGoals = getGoals();
   const status = getStatus();
 
@@ -128,7 +231,9 @@ function EmployeeDashboard() {
       <div className="nav">
         <div>
           <h1>Employee Dashboard</h1>
-          <p className="small">Riya Sharma • Sales Department • FY 2026</p>
+          <p className="small">
+            FY 2026 Goal Cycle • Sales Department • Riya Sharma
+          </p>
         </div>
 
         <span className={`badge ${status === "Approved" ? "approved" : "pending"}`}>
@@ -193,7 +298,9 @@ function EmployeeDashboard() {
 
         <button onClick={addGoal}>Add Goal</button>
         <button onClick={submitGoals}>Submit Goals</button>
-        <button className="danger-btn" onClick={resetData}>Reset Demo</button>
+        <button className="danger-btn" onClick={resetData}>
+          Reset Demo
+        </button>
       </div>
 
       <div className="card form-card">
@@ -363,8 +470,10 @@ Riya Sharma,Sales,${goals.length},${getStatus()},${checkin ? "Completed" : "Pend
 
   return (
     <div className="container">
-      <h1>Admin / HR Dashboard</h1>
-      <p className="small">Central governance, audit trail and completion visibility</p>
+      <h1>GoalBridge Admin Console</h1>
+      <p className="small">
+        Central governance, audit trail and completion visibility
+      </p>
 
       <div className="grid">
         <div className="card kpi">

@@ -170,3 +170,34 @@ textarea{
   margin:10px 0;
   font-family:monospace;
 }
+.glass-pill{
+  background:rgba(255,255,255,0.1);
+  padding:14px 18px;
+  border-radius:14px;
+  color:white;
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+.portal-btn{
+  width:100%;
+  padding:18px;
+  font-size:18px;
+  margin-bottom:18px;
+  border-radius:16px;
+  border:none;
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.purple{
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+}
+
+.blue{
+  background:linear-gradient(135deg,#0ea5e9,#2563eb);
+}
+
+.green{
+  background:linear-gradient(135deg,#14b8a6,#059669);
+}
